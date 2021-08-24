@@ -35,7 +35,7 @@ jobs:
       - run: npm ci
       - run: npm test
         env:
-          DATABASE_URL: 'postgresql://postgres:postgres@postgres:5432/postgres'
+          DATABASE_URL: 'postgresql://postgres:postgres2@postgres:5432/postgres'
           JWT_SECRET: 'test_secret'
           JWT_EXPIRY: 900
           SALT_ROUNDS: 10
